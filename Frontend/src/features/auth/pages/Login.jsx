@@ -1,11 +1,11 @@
 import React,{useState} from 'react'
 import { useNavigate, Link } from 'react-router'
 import "../auth.form.scss"
-// import { useAuth } from '../hooks/useAuth'
+import { useAuth } from '../hooks/useAuth'
 
 const Login = () => {
 
-    // const { loading, handleLogin } = useAuth()
+    const { loading, handleLogin } = useAuth()
     const navigate = useNavigate()
 
     const [ email, setEmail ] = useState("")
@@ -17,10 +17,15 @@ const Login = () => {
         navigate('/')
     }
 
-        // if(loading){
-        //     return (<main><h1>Loading.......</h1></main>)
-        // }
-
+         if (loading) {
+  return (
+    <main className='loading-screen'>
+      <div className='loading-content'>
+        <div className='spinner'></div>
+      </div>
+    </main>
+  );
+}
 
   return (
     <main>
