@@ -4,16 +4,6 @@ import { useNavigate, Link } from 'react-router'
 const Navbar = () => {
     const navigate = useNavigate()
 
-
-// Placeholder logout function
-    const handleLogout = () => {
-        // // Example: Clear user token, then navigate to login
-        // localStorage.removeItem('authToken')
-        // navigate('/login')
-        <Link to={"/login"} >Login</Link>
-    }   
-
-
   return (
     <div>
         {/* Top Header */}
