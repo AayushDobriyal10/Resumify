@@ -214,7 +214,7 @@ async function generatePdfFromHtml(htmlContent) {
             bottom: "20mm",
             left: "15mm",
             right: "15mm"
-        }
+        } 
     })
 
     await browser.close()

@@ -461,3 +461,20 @@ $font-stack:     system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Robot
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
 }
+
+#logout-text {
+  display: inline-block;
+  background-color: #ff2d78;
+  color: #ffffff !important;
+  padding: 6px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+}
+
